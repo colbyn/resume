@@ -2,10 +2,6 @@ module Core.Update exposing (update)
 
 
 -- ~
--- + Project Prelude
-import Data.UI     as UI
-import Data.Either as Either exposing (Either)
-
 -- + Local
 import Core.Effects.Msg as Core
 import Core.Model       as Core

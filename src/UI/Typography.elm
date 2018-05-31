@@ -13,6 +13,8 @@ import Markdown
 import VirtualDom
 
 import Html.Attributes as HA
+
+
 -- + Local
 -- ~
 
@@ -52,6 +54,7 @@ type LayoutType
     = Indent
     | Section
     | Wrapper
+    | Footer
 
 type Language
     = Haskell
@@ -522,6 +525,12 @@ rootSection xs = Layout Section
 -- generic wrapper
 wrapper ss xs = Layout Wrapper ss xs
 
+
+
+footer ss xs = Layout Footer ss xs
+
+
+
 -------------------------------------------------------------------------------
 -- Render Typographic Tree
 -------------------------------------------------------------------------------
@@ -551,6 +560,7 @@ renderElement e = case e of
     Layout Indent ss es -> H.div [A.css ss] (List.map renderElement es)
     Layout Section ss es -> H.section [A.css ss] (List.map renderElement es)
     Layout Wrapper ss es -> H.div [A.css ss] (List.map renderElement es)
+    Layout Footer ss es -> H.footer [A.css ss] (List.map renderElement es)
 
 
 

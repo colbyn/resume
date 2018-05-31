@@ -38,5 +38,14 @@ view model = H.div
         , Page.projects
         , Page.skillset
         , Page.design
+        , footer
         ]
+
+
+footer = Type.footer
+    [ C.width (C.pct 100)
+    ]
+    [
+    ]
+
 

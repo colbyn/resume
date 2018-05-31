@@ -11,8 +11,6 @@ import Css                    as C
 import Css.Colors             as Color
 
 -- + Local
-import Entries.View as Entries
-import Entries.Model as Entries
 import Page
 -- ~
 
