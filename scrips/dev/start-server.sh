@@ -10,6 +10,6 @@ cd $ROOT_DIR
 cd ./etc/browser-target/
 
 # Exec
-http-server ./ --port 500
+http-server ./ --port 5000
 
 
