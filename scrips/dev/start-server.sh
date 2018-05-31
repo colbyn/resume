@@ -10,6 +10,7 @@ cd $ROOT_DIR
 cd ./etc/browser-target/
 
 # Exec
+echo $(pwd);
 http-server 127.0.0.1 --p 5000
 
 
