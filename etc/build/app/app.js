@@ -12544,6 +12544,278 @@ var _rtfeldman$elm_css$Css_Colors$aqua = _rtfeldman$elm_css$Css$hex('7FDBFF');
 var _rtfeldman$elm_css$Css_Colors$blue = _rtfeldman$elm_css$Css$hex('0074D9');
 var _rtfeldman$elm_css$Css_Colors$navy = _rtfeldman$elm_css$Css$hex('001F3F');
 
+var _rtfeldman$elm_css$Css_Media$unparameterizedFeature = function (key) {
+	return {feature: key, value: _elm_lang$core$Maybe$Nothing};
+};
+var _rtfeldman$elm_css$Css_Media$feature = F2(
+	function (key, _p0) {
+		var _p1 = _p0;
+		return {
+			feature: key,
+			value: _elm_lang$core$Maybe$Just(_p1.value)
+		};
+	});
+var _rtfeldman$elm_css$Css_Media$scripting = function (value) {
+	return A2(_rtfeldman$elm_css$Css_Media$feature, 'scripting', value);
+};
+var _rtfeldman$elm_css$Css_Media$enabled = {value: 'enabled', scriptingSupport: _rtfeldman$elm_css$Css_Structure$Compatible};
+var _rtfeldman$elm_css$Css_Media$initialOnly = {value: 'initial-only', scriptingSupport: _rtfeldman$elm_css$Css_Structure$Compatible};
+var _rtfeldman$elm_css$Css_Media$anyHover = function (value) {
+	return A2(_rtfeldman$elm_css$Css_Media$feature, 'any-hover', value);
+};
+var _rtfeldman$elm_css$Css_Media$hover = function (value) {
+	return A2(_rtfeldman$elm_css$Css_Media$feature, 'hover', value);
+};
+var _rtfeldman$elm_css$Css_Media$canHover = {value: 'hover', hoverCapability: _rtfeldman$elm_css$Css_Structure$Compatible};
+var _rtfeldman$elm_css$Css_Media$anyPointer = function (value) {
+	return A2(_rtfeldman$elm_css$Css_Media$feature, 'any-pointer', value);
+};
+var _rtfeldman$elm_css$Css_Media$pointer = function (value) {
+	return A2(_rtfeldman$elm_css$Css_Media$feature, 'pointer', value);
+};
+var _rtfeldman$elm_css$Css_Media$coarse = {value: 'coarse', pointerDevice: _rtfeldman$elm_css$Css_Structure$Compatible};
+var _rtfeldman$elm_css$Css_Media$fine = {value: 'fine', pointerDevice: _rtfeldman$elm_css$Css_Structure$Compatible};
+var _rtfeldman$elm_css$Css_Media$colorGamut = function (value) {
+	return A2(_rtfeldman$elm_css$Css_Media$feature, 'color-gamut', value);
+};
+var _rtfeldman$elm_css$Css_Media$rec2020 = {value: 'rec2020', colorGamut: _rtfeldman$elm_css$Css_Structure$Compatible};
+var _rtfeldman$elm_css$Css_Media$p3 = {value: 'p3', colorGamut: _rtfeldman$elm_css$Css_Structure$Compatible};
+var _rtfeldman$elm_css$Css_Media$srgb = {value: 'srgb', colorGamut: _rtfeldman$elm_css$Css_Structure$Compatible};
+var _rtfeldman$elm_css$Css_Media$maxColorIndex = function (value) {
+	return A2(_rtfeldman$elm_css$Css_Media$feature, 'max-color-index', value);
+};
+var _rtfeldman$elm_css$Css_Media$minColorIndex = function (value) {
+	return A2(_rtfeldman$elm_css$Css_Media$feature, 'min-color-index', value);
+};
+var _rtfeldman$elm_css$Css_Media$colorIndex = function (value) {
+	return A2(_rtfeldman$elm_css$Css_Media$feature, 'color-index', value);
+};
+var _rtfeldman$elm_css$Css_Media$maxMonochrome = function (value) {
+	return A2(_rtfeldman$elm_css$Css_Media$feature, 'max-monochrome', value);
+};
+var _rtfeldman$elm_css$Css_Media$minMonochrome = function (value) {
+	return A2(_rtfeldman$elm_css$Css_Media$feature, 'min-monochrome', value);
+};
+var _rtfeldman$elm_css$Css_Media$monochrome = _rtfeldman$elm_css$Css_Media$unparameterizedFeature('monochrome');
+var _rtfeldman$elm_css$Css_Media$maxColor = function (value) {
+	return A2(_rtfeldman$elm_css$Css_Media$feature, 'max-color', value);
+};
+var _rtfeldman$elm_css$Css_Media$color = _rtfeldman$elm_css$Css_Media$unparameterizedFeature('color');
+var _rtfeldman$elm_css$Css_Media$minColor = function (value) {
+	return A2(_rtfeldman$elm_css$Css_Media$feature, 'min-color', value);
+};
+var _rtfeldman$elm_css$Css_Media$bits = function (value) {
+	return {
+		value: _elm_lang$core$Basics$toString(value),
+		bits: _rtfeldman$elm_css$Css_Structure$Compatible
+	};
+};
+var _rtfeldman$elm_css$Css_Media$overflowInline = function (value) {
+	return A2(_rtfeldman$elm_css$Css_Media$feature, 'overflow-inline', value);
+};
+var _rtfeldman$elm_css$Css_Media$overflowBlock = function (value) {
+	return A2(_rtfeldman$elm_css$Css_Media$feature, 'overflow-block', value);
+};
+var _rtfeldman$elm_css$Css_Media$optionalPaged = {value: 'optional-paged', blockAxisOverflow: _rtfeldman$elm_css$Css_Structure$Compatible};
+var _rtfeldman$elm_css$Css_Media$paged = {value: 'paged', blockAxisOverflow: _rtfeldman$elm_css$Css_Structure$Compatible};
+var _rtfeldman$elm_css$Css_Media$update = function (value) {
+	return A2(_rtfeldman$elm_css$Css_Media$feature, 'update', value);
+};
+var _rtfeldman$elm_css$Css_Media$fast = {value: 'fast', updateFrequency: _rtfeldman$elm_css$Css_Structure$Compatible};
+var _rtfeldman$elm_css$Css_Media$slow = {value: 'slow', updateFrequency: _rtfeldman$elm_css$Css_Structure$Compatible};
+var _rtfeldman$elm_css$Css_Media$grid = _rtfeldman$elm_css$Css_Media$unparameterizedFeature('grid');
+var _rtfeldman$elm_css$Css_Media$scan = function (value) {
+	return A2(_rtfeldman$elm_css$Css_Media$feature, 'scan', value);
+};
+var _rtfeldman$elm_css$Css_Media$interlace = {value: 'interlace', scanningProcess: _rtfeldman$elm_css$Css_Structure$Compatible};
+var _rtfeldman$elm_css$Css_Media$progressive = {value: 'progressive', scanningProcess: _rtfeldman$elm_css$Css_Structure$Compatible};
+var _rtfeldman$elm_css$Css_Media$maxResolution = function (value) {
+	return A2(_rtfeldman$elm_css$Css_Media$feature, 'max-resolution', value);
+};
+var _rtfeldman$elm_css$Css_Media$resolution = function (value) {
+	return A2(_rtfeldman$elm_css$Css_Media$feature, 'resolution', value);
+};
+var _rtfeldman$elm_css$Css_Media$minResolution = function (value) {
+	return A2(_rtfeldman$elm_css$Css_Media$feature, 'min-resolution', value);
+};
+var _rtfeldman$elm_css$Css_Media$dppx = function (value) {
+	return {
+		value: A2(
+			_elm_lang$core$Basics_ops['++'],
+			_elm_lang$core$Basics$toString(value),
+			'dppx'),
+		resolution: _rtfeldman$elm_css$Css_Structure$Compatible
+	};
+};
+var _rtfeldman$elm_css$Css_Media$dpcm = function (value) {
+	return {
+		value: A2(
+			_elm_lang$core$Basics_ops['++'],
+			_elm_lang$core$Basics$toString(value),
+			'dpcm'),
+		resolution: _rtfeldman$elm_css$Css_Structure$Compatible
+	};
+};
+var _rtfeldman$elm_css$Css_Media$dpi = function (value) {
+	return {
+		value: A2(
+			_elm_lang$core$Basics_ops['++'],
+			_elm_lang$core$Basics$toString(value),
+			'dpi'),
+		resolution: _rtfeldman$elm_css$Css_Structure$Compatible
+	};
+};
+var _rtfeldman$elm_css$Css_Media$orientation = function (value) {
+	return A2(_rtfeldman$elm_css$Css_Media$feature, 'orientation', value);
+};
+var _rtfeldman$elm_css$Css_Media$portrait = {value: 'portrait', orientation: _rtfeldman$elm_css$Css_Structure$Compatible};
+var _rtfeldman$elm_css$Css_Media$landscape = {value: 'landscape', orientation: _rtfeldman$elm_css$Css_Structure$Compatible};
+var _rtfeldman$elm_css$Css_Media$maxAspectRatio = function (value) {
+	return A2(_rtfeldman$elm_css$Css_Media$feature, 'max-aspect-ratio', value);
+};
+var _rtfeldman$elm_css$Css_Media$aspectRatio = function (value) {
+	return A2(_rtfeldman$elm_css$Css_Media$feature, 'aspect-ratio', value);
+};
+var _rtfeldman$elm_css$Css_Media$minAspectRatio = function (value) {
+	return A2(_rtfeldman$elm_css$Css_Media$feature, 'min-aspect-ratio', value);
+};
+var _rtfeldman$elm_css$Css_Media$ratio = F2(
+	function (numerator, denominator) {
+		return {
+			value: A2(
+				_elm_lang$core$Basics_ops['++'],
+				_elm_lang$core$Basics$toString(numerator),
+				A2(
+					_elm_lang$core$Basics_ops['++'],
+					'/',
+					_elm_lang$core$Basics$toString(denominator))),
+			ratio: _rtfeldman$elm_css$Css_Structure$Compatible
+		};
+	});
+var _rtfeldman$elm_css$Css_Media$maxHeight = function (value) {
+	return A2(_rtfeldman$elm_css$Css_Media$feature, 'max-height', value);
+};
+var _rtfeldman$elm_css$Css_Media$height = function (value) {
+	return A2(_rtfeldman$elm_css$Css_Media$feature, 'height', value);
+};
+var _rtfeldman$elm_css$Css_Media$minHeight = function (value) {
+	return A2(_rtfeldman$elm_css$Css_Media$feature, 'min-height', value);
+};
+var _rtfeldman$elm_css$Css_Media$maxWidth = function (value) {
+	return A2(_rtfeldman$elm_css$Css_Media$feature, 'max-width', value);
+};
+var _rtfeldman$elm_css$Css_Media$width = function (value) {
+	return A2(_rtfeldman$elm_css$Css_Media$feature, 'width', value);
+};
+var _rtfeldman$elm_css$Css_Media$minWidth = function (value) {
+	return A2(_rtfeldman$elm_css$Css_Media$feature, 'min-width', value);
+};
+var _rtfeldman$elm_css$Css_Media$speech = _rtfeldman$elm_css$Css_Structure$Speech;
+var _rtfeldman$elm_css$Css_Media$screen = _rtfeldman$elm_css$Css_Structure$Screen;
+var _rtfeldman$elm_css$Css_Media$print = _rtfeldman$elm_css$Css_Structure$Print;
+var _rtfeldman$elm_css$Css_Media$connectWith = F2(
+	function (connect, queries) {
+		var _p2 = queries;
+		if (_p2.ctor === '[]') {
+			return _elm_lang$core$Maybe$Nothing;
+		} else {
+			var _p4 = _p2._0;
+			var _p3 = A2(_rtfeldman$elm_css$Css_Media$connectWith, connect, _p2._1);
+			if (_p3.ctor === 'Nothing') {
+				return _elm_lang$core$Maybe$Just(_p4);
+			} else {
+				return _elm_lang$core$Maybe$Just(
+					A2(connect, _p4, _p3._0));
+			}
+		}
+	});
+var _rtfeldman$elm_css$Css_Media$not = _rtfeldman$elm_css$Css_Structure$NotQuery;
+var _rtfeldman$elm_css$Css_Media$only = _rtfeldman$elm_css$Css_Structure$OnlyQuery;
+var _rtfeldman$elm_css$Css_Media$all = _rtfeldman$elm_css$Css_Structure$AllQuery;
+var _rtfeldman$elm_css$Css_Media$withMediaQuery = function (queries) {
+	return _rtfeldman$elm_css$Css_Preprocess$WithMedia(
+		A2(_elm_lang$core$List$map, _rtfeldman$elm_css$Css_Structure$CustomQuery, queries));
+};
+var _rtfeldman$elm_css$Css_Media$withMedia = function (queries) {
+	return _rtfeldman$elm_css$Css_Preprocess$WithMedia(queries);
+};
+var _rtfeldman$elm_css$Css_Media$Ratio = F2(
+	function (a, b) {
+		return {value: a, ratio: b};
+	});
+var _rtfeldman$elm_css$Css_Media$Landscape = F2(
+	function (a, b) {
+		return {value: a, orientation: b};
+	});
+var _rtfeldman$elm_css$Css_Media$Portrait = F2(
+	function (a, b) {
+		return {value: a, orientation: b};
+	});
+var _rtfeldman$elm_css$Css_Media$Resolution = F2(
+	function (a, b) {
+		return {value: a, resolution: b};
+	});
+var _rtfeldman$elm_css$Css_Media$Progressive = F2(
+	function (a, b) {
+		return {value: a, scanningProcess: b};
+	});
+var _rtfeldman$elm_css$Css_Media$Interlace = F2(
+	function (a, b) {
+		return {value: a, scanningProcess: b};
+	});
+var _rtfeldman$elm_css$Css_Media$Slow = F2(
+	function (a, b) {
+		return {value: a, updateFrequency: b};
+	});
+var _rtfeldman$elm_css$Css_Media$Fast = F2(
+	function (a, b) {
+		return {value: a, updateFrequency: b};
+	});
+var _rtfeldman$elm_css$Css_Media$Paged = F2(
+	function (a, b) {
+		return {value: a, blockAxisOverflow: b};
+	});
+var _rtfeldman$elm_css$Css_Media$OptionalPaged = F2(
+	function (a, b) {
+		return {value: a, blockAxisOverflow: b};
+	});
+var _rtfeldman$elm_css$Css_Media$Bits = F2(
+	function (a, b) {
+		return {value: a, bits: b};
+	});
+var _rtfeldman$elm_css$Css_Media$SRGB = F2(
+	function (a, b) {
+		return {value: a, colorGamut: b};
+	});
+var _rtfeldman$elm_css$Css_Media$P3 = F2(
+	function (a, b) {
+		return {value: a, colorGamut: b};
+	});
+var _rtfeldman$elm_css$Css_Media$Rec2020 = F2(
+	function (a, b) {
+		return {value: a, colorGamut: b};
+	});
+var _rtfeldman$elm_css$Css_Media$Fine = F2(
+	function (a, b) {
+		return {value: a, pointerDevice: b};
+	});
+var _rtfeldman$elm_css$Css_Media$Coarse = F2(
+	function (a, b) {
+		return {value: a, pointerDevice: b};
+	});
+var _rtfeldman$elm_css$Css_Media$CanHover = F2(
+	function (a, b) {
+		return {value: a, hoverCapability: b};
+	});
+var _rtfeldman$elm_css$Css_Media$InitialOnly = F2(
+	function (a, b) {
+		return {value: a, scriptingSupport: b};
+	});
+var _rtfeldman$elm_css$Css_Media$Enabled = F2(
+	function (a, b) {
+		return {value: a, scriptingSupport: b};
+	});
+
 var _rtfeldman$elm_css$Css_Structure_Output$noIndent = '';
 var _rtfeldman$elm_css$Css_Structure_Output$spaceIndent = '    ';
 var _rtfeldman$elm_css$Css_Structure_Output$indent = function (str) {
@@ -15651,6 +15923,104 @@ var _user$project$UI_Typography$badge = function (txt) {
 			_1: {ctor: '[]'}
 		});
 };
+var _user$project$UI_Typography$badgeField = F2(
+	function (left, right) {
+		return A3(
+			_user$project$UI_Typography$Display,
+			_user$project$UI_Typography$Badge,
+			{
+				ctor: '::',
+				_0: _user$project$UI_Typography$fontBase,
+				_1: {
+					ctor: '::',
+					_0: _rtfeldman$elm_css$Css$padding(_rtfeldman$elm_css$Css$zero),
+					_1: {
+						ctor: '::',
+						_0: _rtfeldman$elm_css$Css$fontSize(
+							_rtfeldman$elm_css$Css$em(0.7)),
+						_1: {
+							ctor: '::',
+							_0: _rtfeldman$elm_css$Css$height(
+								_rtfeldman$elm_css$Css$pct(100)),
+							_1: {
+								ctor: '::',
+								_0: _rtfeldman$elm_css$Css$marginLeft(
+									_rtfeldman$elm_css$Css$px(8)),
+								_1: {
+									ctor: '::',
+									_0: _rtfeldman$elm_css$Css$color(
+										_rtfeldman$elm_css$Css$hex('#868686')),
+									_1: {
+										ctor: '::',
+										_0: A3(
+											_rtfeldman$elm_css$Css$border3,
+											_rtfeldman$elm_css$Css$px(1),
+											_rtfeldman$elm_css$Css$solid,
+											_rtfeldman$elm_css$Css$hex('#fff')),
+										_1: {
+											ctor: '::',
+											_0: A2(_rtfeldman$elm_css$Css$property, 'box-shadow', '0 0 1px 0px #a0a0a0'),
+											_1: {
+												ctor: '::',
+												_0: _rtfeldman$elm_css$Css$fontWeight(
+													_rtfeldman$elm_css$Css$int(300)),
+												_1: {
+													ctor: '::',
+													_0: _rtfeldman$elm_css$Css$borderRadius(
+														_rtfeldman$elm_css$Css$px(3)),
+													_1: {ctor: '[]'}
+												}
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			},
+			{
+				ctor: '::',
+				_0: A2(
+					_user$project$UI_Typography$appendStyles,
+					{
+						ctor: '::',
+						_0: A3(
+							_rtfeldman$elm_css$Css$borderRight3,
+							_rtfeldman$elm_css$Css$px(1),
+							_rtfeldman$elm_css$Css$solid,
+							_rtfeldman$elm_css$Css$hex('#e8e8e8')),
+						_1: {
+							ctor: '::',
+							_0: A4(
+								_rtfeldman$elm_css$Css$padding4,
+								_rtfeldman$elm_css$Css$px(1),
+								_rtfeldman$elm_css$Css$px(3),
+								_rtfeldman$elm_css$Css$px(1),
+								_rtfeldman$elm_css$Css$px(3)),
+							_1: {ctor: '[]'}
+						}
+					},
+					_user$project$UI_Typography$span(left)),
+				_1: {
+					ctor: '::',
+					_0: A2(
+						_user$project$UI_Typography$appendStyles,
+						{
+							ctor: '::',
+							_0: A4(
+								_rtfeldman$elm_css$Css$padding4,
+								_rtfeldman$elm_css$Css$px(1),
+								_rtfeldman$elm_css$Css$px(3),
+								_rtfeldman$elm_css$Css$px(1),
+								_rtfeldman$elm_css$Css$px(3)),
+							_1: {ctor: '[]'}
+						},
+						_user$project$UI_Typography$span(right)),
+					_1: {ctor: '[]'}
+				}
+			});
+	});
 var _user$project$UI_Typography$Img = function (a) {
 	return {ctor: 'Img', _0: a};
 };
@@ -15763,7 +16133,11 @@ var _user$project$UI_Typography$blockquote_ = function (es) {
 								ctor: '::',
 								_0: _rtfeldman$elm_css$Css$color(
 									_rtfeldman$elm_css$Css$hex('#848484')),
-								_1: {ctor: '[]'}
+								_1: {
+									ctor: '::',
+									_0: _rtfeldman$elm_css$Css$marginRight(_rtfeldman$elm_css$Css$zero),
+									_1: {ctor: '[]'}
+								}
 							}
 						}
 					}
@@ -16305,49 +16679,49 @@ var _user$project$Page_Projects$legend = A2(
 	_user$project$UI_Typography$section(
 		{
 			ctor: '::',
-			_0: _user$project$UI_Typography$p('‡ If inclined to see, these are fairly presentable (something I quite enjoy doing). :)'),
+			_0: _user$project$UI_Typography$p_(
+				{
+					ctor: '::',
+					_0: _user$project$UI_Typography$text('* '),
+					_1: {
+						ctor: '::',
+						_0: A2(_user$project$UI_Typography$a, 'https://github.com/SubSys/Compiler/tree/master/src/SLIR/HelmSyntax/Module/Core/Parser', 'https://github.com/SubSys/Compiler/tree/master/src/SLIR/HelmSyntax/Module/Core/Parser'),
+						_1: {ctor: '[]'}
+					}
+				}),
 			_1: {
 				ctor: '::',
-				_0: _user$project$UI_Typography$p('† These projects will be open sourced as a whole when reasonably complete (or factored out). Likewise, if inclined to see, these are fairly presentable. '),
+				_0: _user$project$UI_Typography$p_(
+					{
+						ctor: '::',
+						_0: _user$project$UI_Typography$text('⁑ '),
+						_1: {
+							ctor: '::',
+							_0: A2(_user$project$UI_Typography$a, 'https://github.com/SubSys/Compiler/tree/master/src/SLIR/HelmSyntax/Module/Core/TypeCheck', 'https://github.com/SubSys/Compiler/tree/master/src/SLIR/HelmSyntax/Module/Core/TypeCheck'),
+							_1: {ctor: '[]'}
+						}
+					}),
 				_1: {
 					ctor: '::',
 					_0: _user$project$UI_Typography$p_(
 						{
 							ctor: '::',
-							_0: _user$project$UI_Typography$text('*(1) '),
+							_0: _user$project$UI_Typography$text('⁂ '),
 							_1: {
 								ctor: '::',
-								_0: A2(_user$project$UI_Typography$a, 'https://github.com/SubSys/Compiler/tree/master/src/SLIR/HelmSyntax/Module/Core/Parser', 'https://github.com/SubSys/Compiler/tree/master/src/SLIR/HelmSyntax/Module/Core/Parser'),
+								_0: A2(_user$project$UI_Typography$a, 'https://github.com/SubSys/Compiler/blob/master/src/CGIR/Rust/Dev/DryRun.hs', 'https://github.com/SubSys/Compiler/blob/master/src/CGIR/Rust/Dev/DryRun.hs'),
 								_1: {ctor: '[]'}
 							}
 						}),
 					_1: {
 						ctor: '::',
-						_0: _user$project$UI_Typography$p_(
-							{
-								ctor: '::',
-								_0: _user$project$UI_Typography$text('*(2) '),
-								_1: {
-									ctor: '::',
-									_0: A2(_user$project$UI_Typography$a, 'https://github.com/SubSys/Compiler/tree/master/src/SLIR/HelmSyntax/Module/Core/TypeCheck', 'https://github.com/SubSys/Compiler/tree/master/src/SLIR/HelmSyntax/Module/Core/TypeCheck'),
-									_1: {ctor: '[]'}
-								}
-							}),
+						_0: _user$project$UI_Typography$p('Regarding ⁂: The dry-run/development compilation pipelines expect to be invoked in ‘stack ghci’.'),
 						_1: {
 							ctor: '::',
-							_0: _user$project$UI_Typography$p_(
-								{
-									ctor: '::',
-									_0: _user$project$UI_Typography$text('*(3) '),
-									_1: {
-										ctor: '::',
-										_0: A2(_user$project$UI_Typography$a, 'https://github.com/SubSys/Compiler/blob/master/src/CGIR/Rust/Dev/DryRun.hs', 'https://github.com/SubSys/Compiler/blob/master/src/CGIR/Rust/Dev/DryRun.hs'),
-										_1: {ctor: '[]'}
-									}
-								}),
+							_0: _user$project$UI_Typography$p('‡ If inclined to see, these are fairly presentable (something I quite enjoy doing). :)'),
 							_1: {
 								ctor: '::',
-								_0: _user$project$UI_Typography$p('Regarding *(3): The dry-run/development compilation pipelines expect to be invoked in ‘stack ghci’.'),
+								_0: _user$project$UI_Typography$p('† These projects will be open sourced as a whole when reasonably complete (or factored out). Likewise, if inclined to see, these are fairly presentable. '),
 								_1: {ctor: '[]'}
 							}
 						}
@@ -16375,11 +16749,30 @@ var _user$project$Page_Projects$otherProjectsBody = A2(
 			_0: _user$project$UI_Typography$li_(
 				{
 					ctor: '::',
-					_0: _user$project$UI_Typography$text('A CLI tool simular to ‘cargo-web’ for ghcjs.'),
+					_0: _user$project$UI_Typography$p('Perceptual image hashing experiments'),
 					_1: {
 						ctor: '::',
-						_0: _user$project$UI_Typography$sup('†'),
-						_1: {ctor: '[]'}
+						_0: _user$project$UI_Typography$blockquote_(
+							_elm_lang$core$List$singleton(
+								A2(
+									_user$project$UI_Typography$appendStyles,
+									{
+										ctor: '::',
+										_0: _rtfeldman$elm_css$Css$paddingTop(_rtfeldman$elm_css$Css$zero),
+										_1: {
+											ctor: '::',
+											_0: _rtfeldman$elm_css$Css$paddingBottom(_rtfeldman$elm_css$Css$zero),
+											_1: {ctor: '[]'}
+										}
+									},
+									_user$project$UI_Typography$p_(
+										_elm_lang$core$List$singleton(
+											A2(_user$project$UI_Typography$a, 'https://github.com/colbyn/ContentID', 'https://github.com/colbyn/ContentID')))))),
+						_1: {
+							ctor: '::',
+							_0: _user$project$UI_Typography$p('If this interests you, let me know ahead of time so I can clean up & recall the details (VIA reviewing a paper)...'),
+							_1: {ctor: '[]'}
+						}
 					}
 				}),
 			_1: {
@@ -16387,7 +16780,7 @@ var _user$project$Page_Projects$otherProjectsBody = A2(
 				_0: _user$project$UI_Typography$li_(
 					{
 						ctor: '::',
-						_0: _user$project$UI_Typography$text('A text editor compiled with ghcjs. So far all that works alright is my multi cursor implementation; since I just recently started this projects.'),
+						_0: _user$project$UI_Typography$text('A CLI tool simular to ‘cargo-web’ for ghcjs.'),
 						_1: {
 							ctor: '::',
 							_0: _user$project$UI_Typography$sup('†'),
@@ -16396,57 +16789,61 @@ var _user$project$Page_Projects$otherProjectsBody = A2(
 					}),
 				_1: {
 					ctor: '::',
-					_0: A2(
-						_user$project$UI_Typography$liHeader_,
-						_user$project$UI_Typography$p_(
-							{
-								ctor: '::',
-								_0: _user$project$UI_Typography$text('A simple ghc/ghcjs macro that generates function stubs when compiled with ghc.'),
-								_1: {
-									ctor: '::',
-									_0: _user$project$UI_Typography$sup('†'),
-									_1: {ctor: '[]'}
-								}
-							}),
+					_0: _user$project$UI_Typography$li_(
 						{
 							ctor: '::',
-							_0: A2(
-								_user$project$UI_Typography$updateAttrs,
-								function (ss) {
-									return A2(
-										_elm_lang$core$Basics_ops['++'],
-										ss,
-										{
-											ctor: '::',
-											_0: _rtfeldman$elm_css$Css$marginLeft(
-												_rtfeldman$elm_css$Css$px(22)),
-											_1: {ctor: '[]'}
-										});
-								},
-								_user$project$UI_Typography$ul(
+							_0: _user$project$UI_Typography$text('A text editor compiled with ghcjs. So far all that works alright is my multi cursor implementation, since I just recently started this project.'),
+							_1: {
+								ctor: '::',
+								_0: _user$project$UI_Typography$sup('†'),
+								_1: {ctor: '[]'}
+							}
+						}),
+					_1: {
+						ctor: '::',
+						_0: _user$project$UI_Typography$li_(
+							{
+								ctor: '::',
+								_0: _user$project$UI_Typography$p_(
 									{
 										ctor: '::',
-										_0: _user$project$UI_Typography$li('The elaborate, although this isn’t ideal, the purpose of the aforementioned macro is to declare JavaScript/ECMAScript FFI declarations that will compile with normal GHC. I.e. You declare your FFI declarations using the provided macros that will become regular JavaScript FFI declarations when compiled with GHCJS, and function declaration stubs when compiled with normal GHC.'),
+										_0: _user$project$UI_Typography$text('A simple ghc/ghcjs macro that generates function stubs when compiled with ghc.'),
 										_1: {
 											ctor: '::',
-											_0: _user$project$UI_Typography$li('All it really does is not brake my beloved ghc based development tools.'),
-											_1: {
-												ctor: '::',
-												_0: A2(
+											_0: _user$project$UI_Typography$sup('†'),
+											_1: {ctor: '[]'}
+										}
+									}),
+								_1: {
+									ctor: '::',
+									_0: _user$project$UI_Typography$p('The elaborate, although this isn’t ideal, the purpose of the aforementioned macro is to declare JavaScript/ECMAScript FFI declarations that will compile with normal GHC. I.e. You declare your FFI declarations using the provided macros that will become regular JavaScript FFI declarations when compiled with GHCJS, and function declaration stubs when compiled with normal GHC.'),
+									_1: {
+										ctor: '::',
+										_0: _user$project$UI_Typography$p('All it really does is not brake my beloved ghc based development tools.'),
+										_1: {
+											ctor: '::',
+											_0: A2(
+												_user$project$UI_Typography$appendStyles,
+												{
+													ctor: '::',
+													_0: _rtfeldman$elm_css$Css$listStyle(_rtfeldman$elm_css$Css$none),
+													_1: {ctor: '[]'}
+												},
+												A2(
 													_user$project$UI_Typography$liHeader,
 													'E.g.',
 													{
 														ctor: '::',
 														_0: A2(_user$project$UI_Typography$codeBlock, _user$project$UI_Typography$Haskell, _user$project$Page_Projects$macroExample),
 														_1: {ctor: '[]'}
-													}),
-												_1: {ctor: '[]'}
-											}
+													})),
+											_1: {ctor: '[]'}
 										}
-									})),
-							_1: {ctor: '[]'}
-						}),
-					_1: {ctor: '[]'}
+									}
+								}
+							}),
+						_1: {ctor: '[]'}
+					}
 				}
 			}
 		}));
@@ -16496,7 +16893,7 @@ var _user$project$Page_Projects$helmProject = _user$project$UI_Typography$sectio
 							}),
 						_1: {
 							ctor: '::',
-							_0: _user$project$UI_Typography$p('A rather long term project of mine. The overall aspiration is to create a simple medium for CPU/(GP)GPU computing; intended to serve as the ‘beginner friendly’ language for a video game engine focused on streaming, or rather, more commonly known as ‘cloud gaming’.'),
+							_0: _user$project$UI_Typography$p('A rather long term project of mine. The overall aspiration is to create a simple medium for CPU/(GP)GPU computing. Initially, intended to serve as the ‘beginner friendly’ language for a video game engine focused on streaming, or rather, more commonly known as ‘cloud gaming’.'),
 							_1: {ctor: '[]'}
 						}
 					})),
@@ -16523,7 +16920,7 @@ var _user$project$Page_Projects$helmProject = _user$project$UI_Typography$sectio
 														_0: _user$project$UI_Typography$text('The Frontend Parser'),
 														_1: {
 															ctor: '::',
-															_0: _user$project$UI_Typography$sup('*(1)'),
+															_0: _user$project$UI_Typography$sup('*'),
 															_1: {ctor: '[]'}
 														}
 													}),
@@ -16542,7 +16939,7 @@ var _user$project$Page_Projects$helmProject = _user$project$UI_Typography$sectio
 															_0: _user$project$UI_Typography$text('Type Inference/Type Checking'),
 															_1: {
 																ctor: '::',
-																_0: _user$project$UI_Typography$sup('*(2)'),
+																_0: _user$project$UI_Typography$sup('⁑'),
 																_1: {ctor: '[]'}
 															}
 														}),
@@ -16561,7 +16958,7 @@ var _user$project$Page_Projects$helmProject = _user$project$UI_Typography$sectio
 																_0: _user$project$UI_Typography$text('The rust code-gen'),
 																_1: {
 																	ctor: '::',
-																	_0: _user$project$UI_Typography$sup('*(3)'),
+																	_0: _user$project$UI_Typography$sup('⁂'),
 																	_1: {ctor: '[]'}
 																}
 															}),
@@ -16607,20 +17004,50 @@ var _user$project$Page_Projects$projects = _user$project$UI_Typography$rootSecti
 		}
 	});
 
+var _user$project$Page_Employment$introCurrent = F3(
+	function (name, date, age) {
+		return _user$project$UI_Typography$blockquote_(
+			{
+				ctor: '::',
+				_0: _user$project$UI_Typography$text(name),
+				_1: {
+					ctor: '::',
+					_0: A2(_user$project$UI_Typography$badgeField, date, age),
+					_1: {
+						ctor: '::',
+						_0: _user$project$UI_Typography$badge('Current'),
+						_1: {ctor: '[]'}
+					}
+				}
+			});
+	});
+var _user$project$Page_Employment$intro = F3(
+	function (name, date, age) {
+		return _user$project$UI_Typography$blockquote_(
+			{
+				ctor: '::',
+				_0: _user$project$UI_Typography$text(name),
+				_1: {
+					ctor: '::',
+					_0: A2(_user$project$UI_Typography$badgeField, date, age),
+					_1: {ctor: '[]'}
+				}
+			});
+	});
 var _user$project$Page_Employment$selfemployment = _user$project$UI_Typography$section(
 	{
 		ctor: '::',
 		_0: _user$project$UI_Typography$h2('Self Employment'),
 		_1: {
 			ctor: '::',
-			_0: _user$project$UI_Typography$blockquote('See the following section “Projects”.'),
+			_0: A3(_user$project$Page_Employment$introCurrent, 'See the following section “Projects”.', '2017 - 2018', '20 - 21'),
 			_1: {
 				ctor: '::',
 				_0: _user$project$UI_Typography$indent(
 					_user$project$UI_Typography$subsection(
 						{
 							ctor: '::',
-							_0: _user$project$UI_Typography$p('20-21 (current). todo...'),
+							_0: _user$project$UI_Typography$p(''),
 							_1: {ctor: '[]'}
 						})),
 				_1: {ctor: '[]'}
@@ -16633,14 +17060,14 @@ var _user$project$Page_Employment$uplynk = _user$project$UI_Typography$section(
 		_0: _user$project$UI_Typography$h2('Uplynk/Verizon Digital Media Services'),
 		_1: {
 			ctor: '::',
-			_0: _user$project$UI_Typography$blockquote('Multimedia streaming backend for primarily broadcast providers (such as ABC, and ESPN).'),
+			_0: A3(_user$project$Page_Employment$intro, 'Multimedia streaming backend for primarily broadcast providers (such as ABC, and ESPN).', '2015 - 2017', '19 - 20'),
 			_1: {
 				ctor: '::',
 				_0: _user$project$UI_Typography$indent(
 					_user$project$UI_Typography$subsection(
 						{
 							ctor: '::',
-							_0: _user$project$UI_Typography$p('19-20, Jr. Developer.'),
+							_0: _user$project$UI_Typography$p('Jr. Developer.'),
 							_1: {ctor: '[]'}
 						})),
 				_1: {ctor: '[]'}
@@ -16653,14 +17080,14 @@ var _user$project$Page_Employment$galileo = _user$project$UI_Typography$section(
 		_0: _user$project$UI_Typography$h2('Galileo'),
 		_1: {
 			ctor: '::',
-			_0: _user$project$UI_Typography$blockquote('Prepaid credit card processor.'),
+			_0: A3(_user$project$Page_Employment$intro, 'Prepaid credit card processor.', '2014 - 2015', '17 - 18'),
 			_1: {
 				ctor: '::',
 				_0: _user$project$UI_Typography$indent(
 					_user$project$UI_Typography$subsection(
 						{
 							ctor: '::',
-							_0: _user$project$UI_Typography$p('17-18, Data Center Tech.'),
+							_0: _user$project$UI_Typography$p('Data Center Tech.'),
 							_1: {ctor: '[]'}
 						})),
 				_1: {ctor: '[]'}
@@ -16673,14 +17100,14 @@ var _user$project$Page_Employment$spaceMonkey = _user$project$UI_Typography$sect
 		_0: _user$project$UI_Typography$h2('Space Monkey'),
 		_1: {
 			ctor: '::',
-			_0: _user$project$UI_Typography$blockquote('Decentralized, p2p cloud storage.'),
+			_0: A3(_user$project$Page_Employment$intro, 'Decentralized, p2p cloud storage.', '2012', '16'),
 			_1: {
 				ctor: '::',
 				_0: _user$project$UI_Typography$indent(
 					_user$project$UI_Typography$subsection(
 						{
 							ctor: '::',
-							_0: _user$project$UI_Typography$p('Began when I was 17. Brief summer internship, under my mentor Tom Metge.'),
+							_0: _user$project$UI_Typography$p('Brief summer internship, under my mentor Tom Metge (when their office was located in Murray).'),
 							_1: {ctor: '[]'}
 						})),
 				_1: {ctor: '[]'}
@@ -16964,7 +17391,7 @@ var _user$project$Page_Design$design = A2(
 					}),
 				_1: {
 					ctor: '::',
-					_0: _user$project$UI_Typography$p('Mostly limited to UI interfaces.'),
+					_0: _user$project$UI_Typography$p('Experience, mostly limited to UI implementations.'),
 					_1: {
 						ctor: '::',
 						_0: _user$project$UI_Typography$indent(
@@ -17002,15 +17429,339 @@ var _user$project$Page_Design$design = A2(
 				}
 			})));
 
-var _user$project$Page$footer = A2(
-	_user$project$UI_Typography$footer,
+var _user$project$Page_Footer$footer = function () {
+	var innerStyling = {
+		ctor: '::',
+		_0: _rtfeldman$elm_css$Css$display(_rtfeldman$elm_css$Css$inlineFlex),
+		_1: {
+			ctor: '::',
+			_0: _rtfeldman$elm_css$Css$flexDirection(_rtfeldman$elm_css$Css$column),
+			_1: {
+				ctor: '::',
+				_0: _rtfeldman$elm_css$Css$padding(
+					_rtfeldman$elm_css$Css$px(10)),
+				_1: {
+					ctor: '::',
+					_0: _rtfeldman$elm_css$Css$height(
+						_rtfeldman$elm_css$Css$px(200)),
+					_1: {
+						ctor: '::',
+						_0: _rtfeldman$elm_css$Css$alignItems(_rtfeldman$elm_css$Css$center),
+						_1: {
+							ctor: '::',
+							_0: _rtfeldman$elm_css$Css$justifyContent(_rtfeldman$elm_css$Css$center),
+							_1: {ctor: '[]'}
+						}
+					}
+				}
+			}
+		}
+	};
+	var footerBorder = {
+		ctor: '::',
+		_0: A3(
+			_rtfeldman$elm_css$Css$borderTop3,
+			_rtfeldman$elm_css$Css$px(1),
+			_rtfeldman$elm_css$Css$solid,
+			_rtfeldman$elm_css$Css$hex('#e0e0e0')),
+		_1: {ctor: '[]'}
+	};
+	return A2(
+		_user$project$UI_Typography$wrapper,
+		footerBorder,
+		_elm_lang$core$List$singleton(
+			A2(
+				_user$project$UI_Typography$footer,
+				{
+					ctor: '::',
+					_0: _rtfeldman$elm_css$Css$width(
+						_rtfeldman$elm_css$Css$pct(100)),
+					_1: {
+						ctor: '::',
+						_0: _rtfeldman$elm_css$Css$displayFlex,
+						_1: {
+							ctor: '::',
+							_0: _rtfeldman$elm_css$Css$justifyContent(_rtfeldman$elm_css$Css$spaceAround),
+							_1: {
+								ctor: '::',
+								_0: _rtfeldman$elm_css$Css$maxWidth(
+									_rtfeldman$elm_css$Css$px(860)),
+								_1: {
+									ctor: '::',
+									_0: A2(_rtfeldman$elm_css$Css$margin2, _rtfeldman$elm_css$Css$zero, _rtfeldman$elm_css$Css$auto),
+									_1: {ctor: '[]'}
+								}
+							}
+						}
+					}
+				},
+				{
+					ctor: '::',
+					_0: A2(
+						_user$project$UI_Typography$wrapper,
+						innerStyling,
+						{
+							ctor: '::',
+							_0: _user$project$UI_Typography$h4('Printer friendly version'),
+							_1: {
+								ctor: '::',
+								_0: A2(
+									_user$project$UI_Typography$appendStyles,
+									{
+										ctor: '::',
+										_0: _rtfeldman$elm_css$Css$fontSize(
+											_rtfeldman$elm_css$Css$em(0.8)),
+										_1: {ctor: '[]'}
+									},
+									A2(_user$project$UI_Typography$a, 'https://github.com/colbyn/resume/tree/master/assets/pre-built/forPrint.pdf', 'https://github.com/colbyn/resume/tree/master/assets/pre-built/forPrint.pdf')),
+								_1: {ctor: '[]'}
+							}
+						}),
+					_1: {
+						ctor: '::',
+						_0: A2(
+							_user$project$UI_Typography$wrapper,
+							innerStyling,
+							{
+								ctor: '::',
+								_0: _user$project$UI_Typography$h4_(
+									{
+										ctor: '::',
+										_0: _user$project$UI_Typography$text('Digital version'),
+										_1: {
+											ctor: '::',
+											_0: _user$project$UI_Typography$badge('preferred'),
+											_1: {ctor: '[]'}
+										}
+									}),
+								_1: {
+									ctor: '::',
+									_0: _user$project$UI_Typography$p('(contains the “Design” section i.e. more information)'),
+									_1: {
+										ctor: '::',
+										_0: A2(
+											_user$project$UI_Typography$appendStyles,
+											{
+												ctor: '::',
+												_0: _rtfeldman$elm_css$Css$fontSize(
+													_rtfeldman$elm_css$Css$em(0.8)),
+												_1: {ctor: '[]'}
+											},
+											A2(_user$project$UI_Typography$a, 'https://github.com/colbyn/resume/tree/master/assets/pre-built/default.pdf', 'https://github.com/colbyn/resume/tree/master/assets/pre-built/default.pdf')),
+										_1: {ctor: '[]'}
+									}
+								}
+							}),
+						_1: {ctor: '[]'}
+					}
+				})));
+}();
+
+var _user$project$Page_Header$headerCenter = function (baseStyling) {
+	var h2Styling = {
+		ctor: '::',
+		_0: _rtfeldman$elm_css$Css$fontSize(
+			_rtfeldman$elm_css$Css$em(2.5)),
+		_1: {
+			ctor: '::',
+			_0: _rtfeldman$elm_css$Css$textAlign(_rtfeldman$elm_css$Css$center),
+			_1: {
+				ctor: '::',
+				_0: _rtfeldman$elm_css$Css$fontWeight(
+					_rtfeldman$elm_css$Css$int(200)),
+				_1: {ctor: '[]'}
+			}
+		}
+	};
+	var h1Styling = {
+		ctor: '::',
+		_0: _rtfeldman$elm_css$Css$fontSize(
+			_rtfeldman$elm_css$Css$em(3)),
+		_1: {
+			ctor: '::',
+			_0: _rtfeldman$elm_css$Css$textAlign(_rtfeldman$elm_css$Css$center),
+			_1: {ctor: '[]'}
+		}
+	};
+	var wrapperStyling = {ctor: '[]'};
+	return A2(
+		_user$project$UI_Typography$wrapper,
+		A2(
+			_elm_lang$core$Basics_ops['++'],
+			baseStyling,
+			{
+				ctor: '::',
+				_0: _rtfeldman$elm_css$Css$displayFlex,
+				_1: {
+					ctor: '::',
+					_0: _rtfeldman$elm_css$Css$flexDirection(_rtfeldman$elm_css$Css$column),
+					_1: {ctor: '[]'}
+				}
+			}),
+		{
+			ctor: '::',
+			_0: A2(
+				_user$project$UI_Typography$wrapper,
+				wrapperStyling,
+				{
+					ctor: '::',
+					_0: A2(
+						_user$project$UI_Typography$appendStyles,
+						h1Styling,
+						_user$project$UI_Typography$h1('Colbyn Wadman')),
+					_1: {ctor: '[]'}
+				}),
+			_1: {
+				ctor: '::',
+				_0: A2(
+					_user$project$UI_Typography$wrapper,
+					wrapperStyling,
+					{
+						ctor: '::',
+						_0: A2(
+							_user$project$UI_Typography$appendStyles,
+							h2Styling,
+							_user$project$UI_Typography$h2('Developer')),
+						_1: {ctor: '[]'}
+					}),
+				_1: {ctor: '[]'}
+			}
+		});
+};
+var _user$project$Page_Header$header = function () {
+	var innerStyling = {
+		ctor: '::',
+		_0: _rtfeldman$elm_css$Css$display(_rtfeldman$elm_css$Css$inlineFlex),
+		_1: {
+			ctor: '::',
+			_0: _rtfeldman$elm_css$Css$flexDirection(_rtfeldman$elm_css$Css$column),
+			_1: {
+				ctor: '::',
+				_0: _rtfeldman$elm_css$Css$padding(
+					_rtfeldman$elm_css$Css$px(10)),
+				_1: {
+					ctor: '::',
+					_0: _rtfeldman$elm_css$Css$height(
+						_rtfeldman$elm_css$Css$px(200)),
+					_1: {
+						ctor: '::',
+						_0: _rtfeldman$elm_css$Css$alignItems(_rtfeldman$elm_css$Css$center),
+						_1: {
+							ctor: '::',
+							_0: _rtfeldman$elm_css$Css$justifyContent(_rtfeldman$elm_css$Css$center),
+							_1: {ctor: '[]'}
+						}
+					}
+				}
+			}
+		}
+	};
+	var outerStyling = {ctor: '[]'};
+	return A2(
+		_user$project$UI_Typography$wrapper,
+		outerStyling,
+		_elm_lang$core$List$singleton(
+			A2(
+				_user$project$UI_Typography$wrapper,
+				{
+					ctor: '::',
+					_0: _rtfeldman$elm_css$Css$width(
+						_rtfeldman$elm_css$Css$pct(100)),
+					_1: {
+						ctor: '::',
+						_0: _rtfeldman$elm_css$Css$displayFlex,
+						_1: {
+							ctor: '::',
+							_0: _rtfeldman$elm_css$Css$justifyContent(_rtfeldman$elm_css$Css$spaceAround),
+							_1: {
+								ctor: '::',
+								_0: _rtfeldman$elm_css$Css$maxWidth(
+									_rtfeldman$elm_css$Css$px(860)),
+								_1: {
+									ctor: '::',
+									_0: A2(_rtfeldman$elm_css$Css$margin2, _rtfeldman$elm_css$Css$zero, _rtfeldman$elm_css$Css$auto),
+									_1: {ctor: '[]'}
+								}
+							}
+						}
+					}
+				},
+				{
+					ctor: '::',
+					_0: A2(
+						_user$project$UI_Typography$wrapper,
+						innerStyling,
+						{ctor: '[]'}),
+					_1: {
+						ctor: '::',
+						_0: _user$project$Page_Header$headerCenter(innerStyling),
+						_1: {
+							ctor: '::',
+							_0: A2(
+								_user$project$UI_Typography$wrapper,
+								innerStyling,
+								{ctor: '[]'}),
+							_1: {ctor: '[]'}
+						}
+					}
+				})));
+}();
+
+var _user$project$Page_School$westlake = _user$project$UI_Typography$section(
 	{
 		ctor: '::',
-		_0: _rtfeldman$elm_css$Css$width(
-			_rtfeldman$elm_css$Css$pct(100)),
-		_1: {ctor: '[]'}
-	},
-	{ctor: '[]'});
+		_0: _user$project$UI_Typography$h2('Westlake'),
+		_1: {
+			ctor: '::',
+			_0: _user$project$UI_Typography$blockquote_(
+				{
+					ctor: '::',
+					_0: A2(_user$project$UI_Typography$badgeField, 'Graduated 2014', '17'),
+					_1: {ctor: '[]'}
+				}),
+			_1: {ctor: '[]'}
+		}
+	});
+var _user$project$Page_School$matc = _user$project$UI_Typography$section(
+	{
+		ctor: '::',
+		_0: _user$project$UI_Typography$h2('MATC'),
+		_1: {
+			ctor: '::',
+			_0: _user$project$UI_Typography$blockquote_(
+				{
+					ctor: '::',
+					_0: _user$project$UI_Typography$text('Basic IT certifications (special high school program).'),
+					_1: {
+						ctor: '::',
+						_0: A2(_user$project$UI_Typography$badgeField, '2011 - 2012', '16'),
+						_1: {ctor: '[]'}
+					}
+				}),
+			_1: {ctor: '[]'}
+		}
+	});
+var _user$project$Page_School$school = _user$project$UI_Typography$rootSection(
+	{
+		ctor: '::',
+		_0: _user$project$UI_Typography$h1('School'),
+		_1: {
+			ctor: '::',
+			_0: _user$project$UI_Typography$indent(
+				_user$project$UI_Typography$section(
+					{
+						ctor: '::',
+						_0: _user$project$Page_School$matc,
+						_1: {
+							ctor: '::',
+							_0: _user$project$Page_School$westlake,
+							_1: {ctor: '[]'}
+						}
+					})),
+			_1: {ctor: '[]'}
+		}
+	});
+
 var _user$project$Page$view = function (model) {
 	return A2(
 		_rtfeldman$elm_css$Html_Styled$div,
@@ -17047,20 +17798,24 @@ var _user$project$Page$view = function (model) {
 			_user$project$UI_Typography$renderElement,
 			{
 				ctor: '::',
-				_0: _user$project$Page_Employment$employment,
+				_0: _user$project$Page_Header$header,
 				_1: {
 					ctor: '::',
-					_0: _user$project$Page_Projects$projects,
+					_0: _user$project$Page_Employment$employment,
 					_1: {
 						ctor: '::',
-						_0: _user$project$Page_Skillset$skillset,
+						_0: _user$project$Page_Projects$projects,
 						_1: {
 							ctor: '::',
-							_0: _user$project$Page_Design$design,
+							_0: _user$project$Page_Skillset$skillset,
 							_1: {
 								ctor: '::',
-								_0: _user$project$Page$footer,
-								_1: {ctor: '[]'}
+								_0: _user$project$Page_School$school,
+								_1: {
+									ctor: '::',
+									_0: _user$project$Page_Footer$footer,
+									_1: {ctor: '[]'}
+								}
 							}
 						}
 					}
@@ -17130,9 +17885,24 @@ if (typeof _user$project$Page_Employment$main !== 'undefined') {
     _user$project$Page_Employment$main(Elm['Page']['Employment'], 'Page.Employment', undefined);
 }
 Elm['Page'] = Elm['Page'] || {};
+Elm['Page']['Footer'] = Elm['Page']['Footer'] || {};
+if (typeof _user$project$Page_Footer$main !== 'undefined') {
+    _user$project$Page_Footer$main(Elm['Page']['Footer'], 'Page.Footer', undefined);
+}
+Elm['Page'] = Elm['Page'] || {};
+Elm['Page']['Header'] = Elm['Page']['Header'] || {};
+if (typeof _user$project$Page_Header$main !== 'undefined') {
+    _user$project$Page_Header$main(Elm['Page']['Header'], 'Page.Header', undefined);
+}
+Elm['Page'] = Elm['Page'] || {};
 Elm['Page']['Projects'] = Elm['Page']['Projects'] || {};
 if (typeof _user$project$Page_Projects$main !== 'undefined') {
     _user$project$Page_Projects$main(Elm['Page']['Projects'], 'Page.Projects', undefined);
+}
+Elm['Page'] = Elm['Page'] || {};
+Elm['Page']['School'] = Elm['Page']['School'] || {};
+if (typeof _user$project$Page_School$main !== 'undefined') {
+    _user$project$Page_School$main(Elm['Page']['School'], 'Page.School', undefined);
 }
 Elm['Page'] = Elm['Page'] || {};
 Elm['Page']['Skillset'] = Elm['Page']['Skillset'] || {};

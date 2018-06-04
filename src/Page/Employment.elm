@@ -32,39 +32,63 @@ employment = Type.rootSection
 
 spaceMonkey = Type.section
     [ Type.h2 "Space Monkey"
-    , Type.blockquote "Decentralized, p2p cloud storage."
+    , intro
+        "Decentralized, p2p cloud storage."
+        "2012"
+        "16"
     , Type.indent <| Type.subsection
-        [ Type.p "Began when I was 17. Brief summer internship, under my mentor Tom Metge."
+        [ Type.p "Brief summer internship, under my mentor Tom Metge (when their office was located in Murray)."
         ]
     ]
 
 galileo = Type.section
     [ Type.h2 "Galileo"
-    , Type.blockquote "Prepaid credit card processor."
+    -- , Type.blockquote "Prepaid credit card processor."
+    , intro
+        "Prepaid credit card processor."
+        "2014 - 2015"
+        "17 - 18"
     , Type.indent <| Type.subsection
-        [ Type.p "17-18, Data Center Tech."
+        [ Type.p "Data Center Tech."
         ]
     ]
 
 uplynk = Type.section
     [ Type.h2 "Uplynk/Verizon Digital Media Services"
-    , Type.blockquote "Multimedia streaming backend for primarily broadcast providers (such as ABC, and ESPN)."
+    -- , Type.blockquote "Multimedia streaming backend for primarily broadcast providers (such as ABC, and ESPN)."
+    , intro
+        "Multimedia streaming backend for primarily broadcast providers (such as ABC, and ESPN)."
+        "2015 - 2017"
+        "19 - 20"
     , Type.indent <| Type.subsection
-        [ Type.p "19-20, Jr. Developer."
+        [ Type.p "Jr. Developer."
         ]
     ]
 
 
 selfemployment = Type.section
     [ Type.h2 "Self Employment"
-    , Type.blockquote "See the following section “Projects”."
+    , introCurrent
+        "See the following section “Projects”."
+        "2017 - 2018"
+        "20 - 21"
     , Type.indent <| Type.subsection
-        [ Type.p "20-21 (current). todo..."
+        [ Type.p ""
         ]
     ]
 
 
 
+intro name date age = Type.blockquote_
+    [ Type.text name
+    , Type.badgeField date age
+    ]
+
+introCurrent name date age = Type.blockquote_
+    [ Type.text name
+    , Type.badgeField date age
+    , Type.badge "Current"
+    ]
 
 
 

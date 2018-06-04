@@ -28,7 +28,7 @@ import Page.Skillset   as Page
 
 design = Type.appendStyles designStyling <| Type.invert <| Type.rootSection
     [ Type.h1_ [Type.text "Design", Type.badge "beginner"]
-    , Type.p "Mostly limited to UI interfaces."
+    , Type.p "Experience, mostly limited to UI implementations."
     , Type.indent <| Type.subsection
         [ Type.h2 "Example:"
         , Type.blockquote "layout prototype I’m working on for a project"

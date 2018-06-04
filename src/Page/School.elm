@@ -1,4 +1,4 @@
-module Page exposing (view)
+module Page.School exposing (school)
 
 -- ~
 import Html.Styled            as H
@@ -20,33 +20,32 @@ import Page.Skillset   as Page
 import Page.Design     as Page
 import Page.Footer     as Page
 import Page.Header     as Page
-import Page.School     as Page
 -- ~
 
 
 
-
-
-view model = H.div
-    [ A.css
-        [ C.backgroundColor (C.hex "#fff")
-        , C.marginBottom C.zero
-        , C.displayFlex
-        , C.flexDirection C.column
-        , C.height (C.pct 100)
-        -- , C.padding (C.px 10)
-        -- , C.marginBottom (C.px 500)
+school = Type.rootSection
+    [ Type.h1 "School"
+    , Type.indent <| Type.section
+        [ matc
+        , westlake
         ]
     ]
-    <| List.map Type.renderElement
-        [ Page.header
-        , Page.employment
-        , Page.projects
-        , Page.skillset
-        , Page.school
-        -- , Page.design
-        , Page.footer
+
+matc = Type.section
+    [ Type.h2 "MATC"
+    , Type.blockquote_
+        [ Type.text "Basic IT certifications (special high school program)."
+        , Type.badgeField "2011 - 2012" "16"
         ]
+    ]
 
 
+
+westlake = Type.section
+    [ Type.h2 "Westlake"
+    , Type.blockquote_
+        [ Type.badgeField "Graduated 2014" "17"
+        ]
+    ]
 

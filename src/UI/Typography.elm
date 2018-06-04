@@ -431,6 +431,7 @@ blockquote_ es = Display Blockquote
     , C.marginLeft (C.px 2)
     , C.paddingLeft (C.px 4)
     , C.color (C.hex "#848484")
+    , C.marginRight C.zero
     ]
     es
 
@@ -485,6 +486,31 @@ badge txt = Display Badge
     , C.borderRadius (C.px 3)
     ]
     [ text txt
+    ]
+
+
+badgeField : String -> String -> Element
+badgeField left right = Display Badge
+    [ fontBase
+    , C.padding C.zero
+    , C.fontSize (C.em 0.7)
+    , C.height (C.pct 100)
+    , C.marginLeft (C.px 8)
+    , C.color (C.hex "#868686")
+    , C.border3 (C.px 1) C.solid (C.hex "#fff")
+    , C.property "box-shadow" "0 0 1px 0px #a0a0a0"
+    , C.fontWeight (C.int 300)
+    , C.borderRadius (C.px 3)
+    ]
+    [ appendStyles
+        [ C.borderRight3 (C.px 1) C.solid (C.hex "#e8e8e8")
+        , C.padding4 (C.px 1) (C.px 3) (C.px 1) (C.px 3)
+        ]
+        (span left)
+    , appendStyles
+        [ C.padding4 (C.px 1) (C.px 3) (C.px 1) (C.px 3)
+        ]
+        (span right)
     ]
 
 
